@@ -1,16 +1,15 @@
-import loginInfoUser from "../constants/loginInfoUser.js";
+import instance from "./instance.js";
 
-const login = () => {
-    fetch('https://ajax.test-danit.com/api/v2/cards/login', {
-        method: 'POST',
-        body: JSON.stringify(loginInfoUser),
-        headers: {
-            'Content-Type': 'application/json'
-        }
-    }).then(res => res.text())
-        .then(token => {
-            console.log(token)
+const login = async (loginInfoUser) => {
+    try {
+        const {status, data: token}= await instance.post('/login', loginInfoUser);
+        if (status === 200) {
             localStorage.setItem('token', token);
-        })
+            console.log(token)
+        }
+    } catch (err) {
+        console.error(err);
+    }
 }
+
 export default login;

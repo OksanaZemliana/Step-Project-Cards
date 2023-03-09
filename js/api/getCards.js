@@ -1,10 +1,11 @@
 import instance from "./instance.js"
 
-const deleteCard = async (id, removeItem) => {
+const getCards = async () => {
     try {
-        const { status, data } = await instance.delete(`${id}`);
+        const { status, data } = await instance.get('');
         if (status === 200) {
-            removeItem();
+            console.log(data);
+            return data;
         } else {
             console.warn(status, data)
         }
@@ -13,4 +14,4 @@ const deleteCard = async (id, removeItem) => {
     }
 }
 
-export default deleteCard;
+export default getCards;
