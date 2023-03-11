@@ -62,6 +62,13 @@ header{
     opacity: 0.5;
 
 }
+.btn-visit{
+    color: #094774;
+    background-color: rgba(243,245,245,1.00);
+    box-shadow: 0px 1px 3px rgb(60 60 60 / 15%);
+    border: 0 solid white;
+    padding:  0 20px;
+}
 
 /*filter-section*/
 
@@ -69,7 +76,7 @@ header{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 20px auto;
+    margin: 30px auto;
     gap: 30px;
     max-width: max-content;
     font-size: 12px;

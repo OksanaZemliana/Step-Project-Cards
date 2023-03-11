@@ -23,6 +23,7 @@ export default class Authorization {
 
         const formLogin = this.wrapperLogin.querySelector('form');
         const inputs = formLogin.querySelectorAll('.login-input');
+
         formLogin.addEventListener('submit', (e) => {
             e.preventDefault();
             const btnSubmit = this.wrapperLogin.querySelector('#login-submit');
@@ -35,8 +36,8 @@ export default class Authorization {
                 btnSubmit.value = 'Далі'
                 if (res) {
                     this.wrapperLogin.remove();
-                    this.btnAuthorization.textContent = 'Створити візит'
-                    this.btnAuthorization.style.color =   '#094774';
+                    this.btnAuthorization.textContent = 'Створити візит';
+                    this.btnAuthorization.classList.add('btn-visit');
                 }
             })
 
