@@ -59,13 +59,13 @@
         <img class="placeholder__img" src="images/placeholder.png" alt="placeholder">
     </div>
 
-    <template id="create-post">
+    <template class="login">
         <div class="wrapper-login">
-            <form class="form-login login">
+            <form class="form-login">
                 <h3 class="login-title">Вхід у особистий кабінет</h3>
-                <input class="login-input" type="email" placeholder="Логін" id="login" required/>
-                <input class="login-input" type="password" placeholder="Пароль" id="password" required/>
-                <input id="login-submit" type="submit" value="Далі"/>
+                <input class="login-input" name="email" type="email" placeholder="Логін" id="login-input" required/>
+                <input class="login-input" name="password" type="password" placeholder="Пароль" id="password" required/>
+                <input id="login-submit" name="submit" type="submit" value="Далі"/>
                 <button class="login-cancel">Відміна</button>
             </form>
         </div>

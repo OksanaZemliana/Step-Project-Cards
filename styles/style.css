@@ -160,13 +160,15 @@ main{
     margin-right: auto;
     left: 0;
     right: 0;
-    top: 25vh
+    top: 25vh;
+    text-align: center;
 }
 
 .login-title {
     color: rgba(13,56,87,1.00);
     margin: 20px auto;
     font-size: 14px;
+
 
 }
 .login-input {
@@ -191,7 +193,7 @@ main{
     background-color: rgba(108,134,152,1.00);
     padding: 16px 8px;
     width: 15vw;
-    margin: 10px auto;
+    margin: 15px auto;
     border: 1px solid rgba(108,134,152,1.00);
     color: white;
     opacity: 0.5;
