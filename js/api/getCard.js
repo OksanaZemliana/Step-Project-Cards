@@ -1,6 +1,6 @@
 import instance from "./instance.js"
 
-const getCard = async (id) => {
+const getCard = async (id ='') => {
     try {
         const { status, data } = await instance.get(`${id}`);
         if (status === 200) {

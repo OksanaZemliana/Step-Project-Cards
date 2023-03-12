@@ -1,7 +1,15 @@
-import login from "./api/login.js";
-import loginInfoUser from "./constants/loginInfoUser.js";
-import postCard from "./api/postCard.js";
-import getCards from "./api/getCards.js";
-import getCard from "./api/getCard.js";
-import deleteCard from "./api/deleteCard.js";
+'use strict';
+import Authorization from "./classes/Authorization.js";
+import changeBtnStyle from "./functions/changeBtnStyle.js";
 
+
+const login = new Authorization(document.querySelector('.container'));
+
+document.addEventListener('DOMContentLoaded', ()=>{
+    if (localStorage.getItem('token')) {
+        changeBtnStyle(login.btnAuthorization, 'Створити візит', 'btn-visit')
+       // 'отрисовка карточек визита'
+       //  getCards.then(res => new Visit.render(res))
+     } else {login.render()}
+
+});
