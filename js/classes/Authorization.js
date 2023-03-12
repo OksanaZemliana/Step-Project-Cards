@@ -1,4 +1,5 @@
 import login from "../api/login.js";
+import changeBtnStyle from "../functions/changeBtnStyle.js";
 
 export default class Authorization {
     constructor(container) {
@@ -36,8 +37,7 @@ export default class Authorization {
                 btnSubmit.value = 'Далі'
                 if (res) {
                     this.wrapperLogin.remove();
-                    this.btnAuthorization.textContent = 'Створити візит';
-                    this.btnAuthorization.classList.add('btn-visit');
+                    changeBtnStyle(this.btnAuthorization, 'Створити візит', 'btn-visit')
                 }
             })
 
