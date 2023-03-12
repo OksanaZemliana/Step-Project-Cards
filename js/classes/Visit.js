@@ -1,4 +1,4 @@
-import { removeCard } from "./Api.js";
+import deleteCard from "../api/deleteCard.js";
 
 export default class Visit {
   constructor({ targetVisit, commit, urgency, fio, id }) {
@@ -26,11 +26,7 @@ export default class Visit {
   }
 
   delete() {
-    removeCard(this.id).then((data) => {
-      if (data.status === 200) {
-        this.card.remove();
-      }
-    });
+    deleteCard(this.id).then(() => this.card.remove());
   }
 
   edit() {}

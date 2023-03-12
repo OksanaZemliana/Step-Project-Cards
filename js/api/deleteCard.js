@@ -1,10 +1,10 @@
 import instance from "./instance.js"
 
-const deleteCard = async (id, removeItem) => {
+const deleteCard = async (id) => {
     try {
-        const { status, data } = await instance.delete(`${id}`);
+        const {status, data} = await instance.delete(`${id}`);
         if (status === 200) {
-            removeItem();
+            return data;
         } else {
             console.warn(status, data)
         }
