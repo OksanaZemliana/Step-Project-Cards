@@ -20,9 +20,12 @@ export default class Visit {
     <p>${this.targetVisit}</p>
     
     `;
-
+    this.removeBtn.textContent = "DELETE";
+    this.editBtn.textContent = "EDIT";
     this.card.append(this.editBtn, this.removeBtn);
     this.removeBtn.addEventListener("click", () => this.delete);
+
+    parent.append(this.card);
   }
 
   delete() {

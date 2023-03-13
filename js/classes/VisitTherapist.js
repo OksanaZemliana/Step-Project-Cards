@@ -5,7 +5,7 @@ export default class VisitTherapist extends Visit {
     super({ targetVisit, commit, urgency, fio, id });
     this.age = age;
   }
-  renderVisitDentist(parent) {
+  renderVisitTherapist(parent) {
     this.render(parent);
     this.card.innerHTML += `
         <p>${this.age}</p>

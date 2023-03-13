@@ -13,21 +13,6 @@ export default class VisitDentist extends Visit {
   }
 }
 
-// const arr = [
-//   {
-//     name: "sdfsdf",
-//     doctor: "Dentist",
-//   },
-//   {
-//     name: "sdfsdf",
-//     doctor: "Dentist",
-//   },
-//   {
-//     name: "sdfsdf",
-//     doctor: "Dentist",
-//   },
-// ];
-
 // const parent = document.querySelector("ul");
 
 // arr.forEach((visit) => {
