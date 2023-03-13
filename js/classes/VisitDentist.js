@@ -13,35 +13,35 @@ export default class VisitDentist extends Visit {
   }
 }
 
-const arr = [
-  {
-    name: "sdfsdf",
-    doctor: "Dentist",
-  },
-  {
-    name: "sdfsdf",
-    doctor: "Dentist",
-  },
-  {
-    name: "sdfsdf",
-    doctor: "Dentist",
-  },
-];
+// const arr = [
+//   {
+//     name: "sdfsdf",
+//     doctor: "Dentist",
+//   },
+//   {
+//     name: "sdfsdf",
+//     doctor: "Dentist",
+//   },
+//   {
+//     name: "sdfsdf",
+//     doctor: "Dentist",
+//   },
+// ];
 
-const parent = document.querySelector("ul");
+// const parent = document.querySelector("ul");
 
-arr.forEach((visit) => {
-  switch (visit.doctor) {
-    case "Dentist":
-      const newVis = new VisitDentist({});
-      newVis.renderVisitDentist(parent);
-      break;
-    // case "VisitCardiologist":
-    //   const newVis = new VisitDentist({});
-    //   newVis.renderVisitDentist(parent);
-    //   break;
+// arr.forEach((visit) => {
+//   switch (visit.doctor) {
+//     case "Dentist":
+//       const newVis = new VisitDentist({});
+//       newVis.renderVisitDentist(parent);
+//       break;
+//     // case "VisitCardiologist":
+//     //   const newVis = new VisitDentist({});
+//     //   newVis.renderVisitDentist(parent);
+//     //   break;
 
-    default:
-      break;
-  }
-});
+//     default:
+//       break;
+//   }
+// });
